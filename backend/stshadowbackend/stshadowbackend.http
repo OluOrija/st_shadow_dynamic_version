@@ -1,0 +1,6 @@
+@stshadowbackend_HostAddress = http://localhost:5008
+
+GET {{stshadowbackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

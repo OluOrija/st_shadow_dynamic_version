@@ -1,0 +1,21 @@
+services:
+  frontend:
+    build:
+      context: ./frontend/stshadowfrontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend/stshadowfrontend:/app
+    stdin_open: true
+    tty: true
+  backend:
+    build:
+      context: ./backend/stshadowbackend
+      dockerfile: Dockerfile
+    ports:
+      - "5008:5008"
+      - "7103:7103"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development  
+

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "GfkkwAM21vSVCtdwBnisQnTBHk9/on2obLXKKRlmtbE=",
+  "Source": "stshadowbackend",
+  "BasePath": "_content/stshadowbackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
