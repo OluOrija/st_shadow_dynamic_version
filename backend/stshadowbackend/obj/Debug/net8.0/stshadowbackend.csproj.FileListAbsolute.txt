@@ -256,3 +256,6 @@ C:\Users\Oluse\OneDrive\Documents\GitHub\st_shadow_dynamic_version\backend\stsha
 C:\Users\Oluse\OneDrive\Documents\GitHub\st_shadow_dynamic_version\backend\stshadowbackend\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 C:\Users\Oluse\OneDrive\Documents\GitHub\st_shadow_dynamic_version\backend\stshadowbackend\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\Users\Oluse\OneDrive\Documents\GitHub\st_shadow_dynamic_version\backend\stshadowbackend\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\Oluse\OneDrive\Documents\GitHub\st_shadow_dynamic_version\backend\stshadowbackend\bin\Debug\net8.0\appsettings.Defaults.json
+C:\Users\Oluse\OneDrive\Documents\GitHub\st_shadow_dynamic_version\backend\stshadowbackend\bin\Debug\net8.0\Azure.Extensions.AspNetCore.Configuration.Secrets.dll
+C:\Users\Oluse\OneDrive\Documents\GitHub\st_shadow_dynamic_version\backend\stshadowbackend\bin\Debug\net8.0\Azure.Security.KeyVault.Secrets.dll

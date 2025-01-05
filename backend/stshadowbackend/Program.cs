@@ -9,8 +9,24 @@ using FluentValidation;
 using stshadowbackend.Validators.Models;
 using stshadowbackend.Middleware;
 using Microsoft.AspNetCore.Mvc;
+using Azure.Identity;
+using Microsoft.Extensions.Configuration;
+using Azure.Security.KeyVault.Secrets;
+using Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos;
+
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Load defaults from appsettings.Development.json
+builder.Configuration.AddJsonFile("appsettings.Defaults.json", optional: false, reloadOnChange: true);
+
+// Add Azure Key Vault to override defaults
+var credential = new DefaultAzureCredential();
+var keyVaultName = "stshadowKeyVault";
+var keyVaultUri = new Uri($"https://{keyVaultName}.vault.azure.net/");
+builder.Configuration.AddAzureKeyVault(keyVaultUri, credential);
+
+builder.Services.AddControllersWithViews();
 
 // Configure JWT Authentication
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -77,6 +93,8 @@ if (app.Environment.IsDevelopment())
 
 // Add middleware and routing
 app.UseMiddleware<ExceptionMiddleware>();
+app.UseStaticFiles();
+app.UseRouting();
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
