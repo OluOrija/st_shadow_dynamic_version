@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("stshadowbackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45feb05ee1b3d992fad1caaf0535fa70f8ce9f57")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a46446cd38811d7add2efb5a9c822aca3b42eb03")]
 [assembly: System.Reflection.AssemblyProductAttribute("stshadowbackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("stshadowbackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
